@@ -9,7 +9,7 @@ namespace ОбработчикCSV
         Целое,
         Вещественное,
         ОднострочныйТекст,
-        МнострочныйТекст,
+        МногострочныйТекст,
         СсылкаВСетиИнтернет,
         Булево,
         ДатаВремя,
@@ -61,7 +61,7 @@ namespace ОбработчикCSV
                             }
                             else if (IsInteger(values[i]))
                             {
-                                if (dataTypes[i].DataType == DataType.МнострочныйТекст)
+                                if (dataTypes[i].DataType == DataType.МногострочныйТекст)
                                 {
                                     continue;
                                 }
@@ -80,7 +80,7 @@ namespace ОбработчикCSV
                             }
                             else if (IsFloat(values[i]))
                             {
-                                if (dataTypes[i].DataType == DataType.МнострочныйТекст)
+                                if (dataTypes[i].DataType == DataType.МногострочныйТекст)
                                 {
                                     continue;
                                 }
@@ -95,7 +95,7 @@ namespace ОбработчикCSV
                         }
                             else if (IsInternetLink(values[i]))
                             {
-                                if (dataTypes[i].DataType == DataType.МнострочныйТекст)
+                                if (dataTypes[i].DataType == DataType.МногострочныйТекст)
                                 {
                                     continue;
                                 }
@@ -110,7 +110,7 @@ namespace ОбработчикCSV
                             }
                             else if (IsBoolean(values[i]))
                             {
-                                if (dataTypes[i].DataType == DataType.МнострочныйТекст)
+                                if (dataTypes[i].DataType == DataType.МногострочныйТекст)
                                 {
                                     continue;
                                 }
@@ -125,7 +125,7 @@ namespace ОбработчикCSV
                         }
                             else if (IsDateTime(values[i]))
                             {
-                                if (dataTypes[i].DataType == DataType.МнострочныйТекст)
+                                if (dataTypes[i].DataType == DataType.МногострочныйТекст)
                                 {
                                     continue;
                                 }
@@ -140,7 +140,7 @@ namespace ОбработчикCSV
                             }
                             else if (IsTag(values[i]))
                             {
-                                if (dataTypes[i].DataType == DataType.МнострочныйТекст)
+                                if (dataTypes[i].DataType == DataType.МногострочныйТекст)
                                 {
                                     continue;
                                 }
@@ -155,7 +155,7 @@ namespace ОбработчикCSV
                             }
                             else if (IsSingleLineText(values[i]))
                             {
-                                if (dataTypes[i].DataType == DataType.МнострочныйТекст)
+                                if (dataTypes[i].DataType == DataType.МногострочныйТекст)
                                 {
                                     continue;
                                 }
@@ -166,7 +166,7 @@ namespace ОбработчикCSV
                             }
                             else if (IsMultiLineText(values[i]))
                             {
-                                dataTypes[i].DataType = DataType.МнострочныйТекст;
+                                dataTypes[i].DataType = DataType.МногострочныйТекст;
                             }
                        /* }*/
                     }
